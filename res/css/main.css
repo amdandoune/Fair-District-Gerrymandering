@@ -1,0 +1,14 @@
+.filter {
+    text-align: center; 
+    margin-top: 75px;
+}
+
+.filter select {
+    width: 200px    ;
+    height: 35px;
+}
+
+#submit-filter {
+    width: 150px;
+    height: 35px;
+}

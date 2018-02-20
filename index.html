@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="res/css/main.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CDG</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Group</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container filter">
+
+        <div class="row">
+            <form method="POST">
+                <div class="col-md-3">
+
+                    <select>
+                          <option value="" selected disabled hidden>Select State</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="West Virginia">West Virginia</option>
+                    </select>
+
+                </div>
+                <div class="col-md-3">
+                    <select>
+                        <option value="" selected disabled hidden>Select Year</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select>
+                        <option value="" selected disabled hidden>Select Filter Option</option>
+                        <option value="Compactness">Compactness</option>
+                        <option value="Contiguity">Contiguity</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input id="submit-filter" type="submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+
+    </div>
+
+
+</body>
+
+</html>
