@@ -1,6 +1,13 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+
 .filter {
     text-align: center; 
     margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .filter select {
@@ -11,4 +18,11 @@
 #submit-filter {
     width: 150px;
     height: 35px;
+}
+
+.map-container {
+    border: 1px solid black;
+    margin-top: 75px;
+    text-align: center;
+    height: 100px;
 }
