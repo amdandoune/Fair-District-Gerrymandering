@@ -21,8 +21,15 @@ body, html {
 }
 
 .map-container {
-    border: 1px solid black;
+    border: 3   px solid black;
     margin-top: 75px;
+    margin-bottom: 75px;
     text-align: center;
-    height: 100px;
+    padding: 25px;
+}
+
+#map {
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
 }
