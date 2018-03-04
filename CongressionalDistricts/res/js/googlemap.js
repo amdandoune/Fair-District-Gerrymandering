@@ -25,7 +25,7 @@ function initMap() {
         mapTypeControl: true,
         scaleControl: false,
         draggable: false,
-        center: new google.maps.LatLng(41.850033, -87.6500523),
+        center: new google.maps.LatLng(35.850033, -95.6500523),
         zoom: 4,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeId: google.maps.MapTypeId.TERRAIN
@@ -34,7 +34,12 @@ function initMap() {
     map.set('styles', mapStyle)
 }
 
-function processLocation(lat, long, state, zoom) {
+function processLocation(lat, long, state, zoom, color) {
+
+    map.data.forEach(function(feature) {
+      map.data.remove(feature);
+    });
+
     map.setCenter({
         lat: lat,
         lng: long
@@ -42,7 +47,7 @@ function processLocation(lat, long, state, zoom) {
 
     map.data.addGeoJson(state);
     var featureStyle = {
-        strokeColor: '#000000',
+        strokeColor: color,
         strokeWeight: 4
     }
     map.data.setStyle(featureStyle);
@@ -58,13 +63,13 @@ $(document).ready(function() {
 
         switch(state) {
             case 'Maryland':
-                processLocation(39.045753, -76.641273, maryland, 7.5);
+                processLocation(39.045753, -77.3, maryland, 7.5, "#800000");
                 break;
             case 'West Virginia':
-                processLocation(38.9, -80.690674, westvirginia, 7)
+                processLocation(38.9, -80.690674, westvirginia, 7, "#103486")
                 break;
             case 'Rhode Island':
-                processLocation(41.5800945, -71.4774291, rhodeisland, 9);
+                processLocation(41.5800945, -71.4774291, rhodeisland, 9, "#CCCC00");
                 break;
         }
     });
