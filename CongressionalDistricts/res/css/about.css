@@ -1,0 +1,47 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about-container {
+	text-align: center;
+	padding: 35px;
+
+	/* border: 1px solid red; */
+}
+
+
+
+.overview-group {
+	margin-bottom: 50px;
+	text-align: left;
+/* border: 1px solid blue; */
+}
+
+
+.instructions-group {
+	/* margin-top: 10px; */
+	/* margin-bottom: 20px; */
+	text-align: left;
+/* border: 1px solid blue; */
+}
+
+#about-header {
+	margin-bottom: 50px;
+		/* border: 1px solid green; */
+}
+
+#overview-header{
+	margin-bottom: 50px;
+		/* border: 1px solid black; */
+		text-align: center;
+}
+
+#instructions-header{
+	margin-bottom: 50px;
+		/* border: 1px solid black; */
+		text-align: center;
+		/* margin-top: 5px; */
+}

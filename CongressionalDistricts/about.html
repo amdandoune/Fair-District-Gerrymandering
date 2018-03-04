@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="res/js/googlemap.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="res/css/main.css">
+      <link rel="stylesheet" href="res/css/about.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-light">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">District Generator</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li><a href="group.html">Group</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="glyphicon glyphicon-log-in"></span></a>
+                  <ul id="login-dp" class="dropdown-menu">
+                     <li>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                 <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" placeholder="Email address" required>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="sr-only">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                 </div>
+                                 <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+               <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="about-container">
+         <h1 id="about-header">About <small class="text-muted"> Guides and Overview</small></h1>
+         <div class="col-md-12"></div>
+         <div class="col-md-12">
+            <div class="overview-group">
+               <h3 id="overview-header">Overview</h3>
+               <p align="center" style="font-size:150%;">This is a Congressional Districts Map generator</p>
+               <p class="lead">
+                  It can generate the voting districts for states of Maryland, Rhode island, and West Virginia.
+                  It can generate many different congressional districts by different years that doesn't
+                  use gerrymadering in an unfair way. It generates base upon compactness, contiguity, equal
+                  population, preservation of eisting political communities, partisan fairness, and racial fairness.
+               </p>
+            </div>
+            <div class="instructions-group">
+               <h3 id="instructions-header">Instructions</h3>
+               <p class="lead">The way to use this map generator is to select any of the state in the
+                  selecte state drop down menu, select any year in the select year drop down menu,
+                  and select any filter option in the filter option menu. All the options can be found in the
+                  <a href="index.html">home page</a> ! </br>
+                  Make sure to click generate !
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
