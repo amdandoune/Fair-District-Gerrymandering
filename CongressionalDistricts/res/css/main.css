@@ -26,13 +26,25 @@ body, html {
 .map-container {
   width: 100%;
   border: 2px solid black;
-  padding: 0px
+  padding: 0px;
 }
 
 .info-container {
   width: 100%;
   border: 2px solid black;
   height: 500px;
+  text-align: left;
+  padding: 25px;
+}
+
+.info-container h3{
+    margin-top: -5px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.info-container label {
+  margin-bottom: 15px;
 }
 
 .content-container {
