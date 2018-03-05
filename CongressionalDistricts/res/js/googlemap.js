@@ -57,8 +57,9 @@ function processLocation(lat, long, state, zoom, color) {
 // google.maps.event.addDomListener(window, 'load', initMaps);
 
 $(document).ready(function() {
-    $('#state-selector').on('change', function() {
-        state = $(this).find("option:selected").val();
+    $('#submit-filter').click(function(event) {
+        event.preventDefault();
+        state = $('#state-selector').find("option:selected").val();
         $('#state-label').text(state);
         switch(state) {
             case 'Maryland':
