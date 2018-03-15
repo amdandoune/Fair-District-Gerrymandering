@@ -30,17 +30,17 @@ body, html {
 }
 
 .map-container {
-  width: 100%;
-  border: 2px solid black;
-  padding: 0px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 0px;
 }
 
 .info-container {
-  width: 100%;
-  border: 2px solid black;
-  height: 500px;
-  text-align: left;
-  padding: 25px;
+    width: 100%;
+    border: 2px solid black;
+    height: 500px;
+    text-align: left;
+    padding: 25px;
 }
 
 .info-container h3{
@@ -50,7 +50,7 @@ body, html {
 }
 
 .info-container label {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .content-container {
@@ -64,7 +64,27 @@ body, html {
 }
 
 .navbar {
-  background-color: #e3f2fd;
+    background-color: #e3f2fd;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.navbar-header a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.navbar li a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar li {
+    height: 65px;
 }
 
 #login-dp{
@@ -74,37 +94,7 @@ body, html {
     background-color:rgba(255,255,255,.9);
 }
 
-.navbar-header a
-{
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 30px;
-  /* margin-left: 10px; */
-
-}
-
-.navbar-nav a
-{
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 15px;
-}
-
 .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #4682B4;
     color: #FFC0CB;
 }
-/*
-navbar li a.btn:hover {
-     -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-     -o-transform: scale(1.1);
- }
- a.btn {
-     -webkit-transform: scale(0.8);
-     -moz-transform: scale(0.8);
-     -o-transform: scale(0.8);
-     -webkit-transition-duration: 0.5s;
-     -moz-transition-duration: 0.5s;
-     -o-transition-duration: 0.5s;
- }*/
