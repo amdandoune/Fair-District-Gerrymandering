@@ -4,13 +4,13 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .filter {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 15px;
     margin-bottom: 35px;
     padding-left: 100px;
     padding-right: 100px;
+    margin-bottom: 10px;
 }
 
 .filter select {
@@ -19,8 +19,13 @@ body, html {
 }
 
 #submit-filter {
-    width: 150px;
-    height: 35px;
+    width: 125px;
+    height: 125px;
+    border-radius: 15px;
+}
+
+.selectpicker {
+    margin-bottom: 15px;
 }
 
 .map-container {
@@ -68,13 +73,6 @@ body, html {
     background-color:rgba(255,255,255,.9);
 }
 
-.navbar-search
-{
-  margin-top: 15px;
-  margin-bottom: 5px;
-    /* padding-left: : 5px; */
-}
-
 .navbar-header a
 {
   margin-top: 10px;
@@ -90,8 +88,6 @@ body, html {
   margin-bottom: 5px;
   font-size: 15px;
 }
-
-
 
 .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #4682B4;
