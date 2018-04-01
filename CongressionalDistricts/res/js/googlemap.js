@@ -18,13 +18,14 @@ var mapStyle = [{
 
 
 var map;
+
 function initMap() {
     var mapOptions = {
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: true,
         scaleControl: false,
-        draggable: false,
+        draggable: true,
         center: new google.maps.LatLng(35.850033, -95.6500523),
         zoom: 4,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -92,6 +93,18 @@ $(document).ready(function() {
                 $('#over18-label').text('828,611');
                 $('#under18-label').text('223,956');
                 break;
+
+            case 'Maine':
+                processLocation(43.65328, -70.276172, maine, 7, "#434444");
+                $('#pop-label').text('1,052,567');
+                $('#ethnicity-label').text('hispanic or latino(130,655), white(856,869), african american(60,189), asians(30,457)');
+                $('#party-label').text("Democrat");
+                $('#male-pop-label').text('508,400');
+                $('#female-pop-label').text("544,167");
+                $('#over18-label').text('828,611');
+                $('#under18-label').text('223,956');
+                break;
+
         }
     });
 });
