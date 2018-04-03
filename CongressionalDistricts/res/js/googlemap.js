@@ -64,7 +64,7 @@ $(document).ready(function() {
         $('#state-label').text(state);
         switch(state) {
             case 'Maryland':
-                processLocation(39.045753, -77.3, maryland, 7.5, "#800000");
+                processLocation(39.045753, -77.3, maryland, 7, "#800000");
                 $('#pop-label').text('5,773,552');
                 $('#ethnicity-label').text('hispanic or latino(470,632), white(3,359,284), african american(1,700,298), asians(318,853)');
                 $('#party-label').text("Democrat");
@@ -95,7 +95,7 @@ $(document).ready(function() {
                 break;
 
             case 'Missouri':
-                processLocation(38.627003, -90.199402, missouri, 8, "#434444");
+                processLocation(37.9642529, -91.8318334, missouri, 6, "#434444");
                 $('#pop-label').text('1,052,567');
                 $('#ethnicity-label').text('hispanic or latino(130,655), white(856,869), african american(60,189), asians(30,457)');
                 $('#party-label').text("Democrat");
