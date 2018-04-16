@@ -1,13 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-
 <html>
-
 <head>
-
     <link rel="stylesheet" href="res/css/register.css">
     <script src="res/js/register.js"></script>
-
 </head>
 <body>
 <nav class="navbar navbar-light">
@@ -28,19 +24,17 @@
                     <li>
                         <div class="row">
                             <div class="col-md-12">
-                                <form id="login-form" class="form" role="form" method="post" action="/login"
-                                      accept-charset="UTF-8"
-                                      id="login-nav">
+                                <form id="login-form" class="form" role="form" accept-charset="UTF-8" id="login-nav">
                                     <div class="form-group">
                                         <label>Member Access</label>
-                                        <div class="error-div ed-3"><p>Invalid username or password</p></div>
+                                        <div class="error-div ed-3"><p>Invalid username and/or password</p></div>
                                         <input name="username" type="text" class="form-control"
-                                               placeholder="Username    " required>
+                                               placeholder="Username" required>
                                     </div>
                                     <div class="form-group">
                                         <input name="password" type="password" class="form-control"
                                                placeholder="Password" required>
-                                        <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                        <%--<div class="help-block text-right"><a href="">Forget the password ?</a></div>--%>
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary btn-block">Log in</button>
@@ -57,5 +51,4 @@
     </div>
 </nav>
 </body>
-
 </html>

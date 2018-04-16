@@ -12,7 +12,13 @@
         <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 
         <mapping class="com.expos.models.UsersEntity"/>
-        <mapping class="com.expos.models.UsersEntity"/>
+        <mapping class="com.expos.models.DistrictsEntity"/>
+        <mapping class="com.expos.models.PrecinctpositionsEntity"/>
+        <mapping class="com.expos.models.PrecinctsEntity"/>
+        <mapping class="com.expos.models.StatesEntity"/>
+        <mapping class="com.expos.models.PrecintpositionsEntity"/>
+        <mapping class="com.expos.models.PrecintsEntity"/>
+
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->

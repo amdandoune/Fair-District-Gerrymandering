@@ -1,13 +1,28 @@
 package com.expos.controllers;
 
+import com.expos.models.UsersEntity;
+import com.expos.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 public class IndexController {
 
     ModelAndView mv;
+
+    private UserService userService;
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping("/")
     public ModelAndView goHome() {
@@ -41,5 +56,20 @@ public class IndexController {
         return mv;
     }
 
+    @GetMapping(value = "/profile")
+    public ModelAndView goToProfile() {
+        mv = new ModelAndView("profile");
+        return mv;
+    }
+
+    @GetMapping(value = "/ziZdQ9CSTT")
+    @ResponseBody
+    public ModelAndView goToPanel(HttpServletRequest request) {
+        mv = new ModelAndView("admin");
+        HttpSession session = request.getSession(true);
+        List<UsersEntity> userList = userService.getUserList();
+        session.setAttribute("userList", userList);
+        return mv;
+    }
 
 }

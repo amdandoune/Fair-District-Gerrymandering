@@ -21,7 +21,6 @@ public class UserDaoImpl implements UserDao {
             session = sessionFactory.openSession();
             session.beginTransaction();
             session.save(user);
-            System.out.println("Identifier");
             session.getTransaction().commit();
 
         } catch (Exception e) {
@@ -38,6 +37,30 @@ public class UserDaoImpl implements UserDao {
             e.printStackTrace();
         }
         return session.createQuery("from UsersEntity ").getResultList();
+    }
+
+    public void update(UsersEntity user) {
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.update(user);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void delete(UsersEntity user) {
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.delete(user);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

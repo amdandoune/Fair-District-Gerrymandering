@@ -1,37 +1,18 @@
-body, html {
-	width: 100%;
-	height: 100%;
-	overflow: none;
-	font-family: 'Open Sans', sans-serif;
-}
-
 #contact-container {
-	text-align: center;
-	padding: 35px;
-
-	/* border: 1px solid red; */
+    text-align: center;
+    padding: 35px;
 }
-
-
 
 .email-group {
-	margin-bottom: 50px;
-	text-align: left;
-/* border: 1px solid blue; */
+    margin-bottom: 50px;
+    text-align: left;
 }
 
-
-#contact-header {
-	margin-bottom: 50px;
-		/* border: 1px solid green; */
+#email-header {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-#email-header{
-	margin-bottom: 50px;
-		/* border: 1px solid black; */
-		text-align: center;
-}
-
-#email-info{
-  text-align: center;
+#email-info {
+    text-align: center;
 }

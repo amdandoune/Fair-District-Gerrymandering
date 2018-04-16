@@ -2,39 +2,23 @@ package com.expos.services;
 
 
 import com.expos.models.UsersEntity;
-import org.springframework.stereotype.Service;
 
-@Service
+import java.util.List;
+
 public interface UserService {
 
+    List<UsersEntity> getUserList();
+
     void save(UsersEntity user);
+
     UsersEntity login(String username, String password);
+
     boolean exists(String username);
 
-//    List<UsersEntity> list();
+    UsersEntity getUser(String username);
 
+    void update(UsersEntity user);
 
-//    @Autowired
-//    private static final SessionFactory ourSessionFactory;
-//
-//    static {
-//        try {
-//            ourSessionFactory = new Configuration().
-//                    configure("com/expos/hibernate/hibernate.cfg.xml").
-//                    buildSessionFactory();
-//        } catch (Throwable ex) {
-//            throw new ExceptionInInitializerError(ex);
-//        }
-//    }
-//
-//    public static Session getSession() throws HibernateException {
-//        return ourSessionFactory.openSession();
-//    }
-//
-//
-//    public void print() {
-//        ourSessionFactory.getCurrentSession().get(UsersEntity.class, "username");
-//    }
-
+    void delete(UsersEntity user);
 
 }

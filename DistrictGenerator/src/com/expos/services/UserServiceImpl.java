@@ -14,6 +14,11 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Transactional
+    public List<UsersEntity> getUserList() {
+        return userDao.list();
+    }
+
+    @Transactional
     public void save(UsersEntity user) {
         userDao.save(user);
     }
@@ -38,6 +43,28 @@ public class UserServiceImpl implements UserService {
             }
         }
         return false;
+    }
+
+    @Transactional
+    public UsersEntity getUser(String username) {
+        UsersEntity temp = null;
+        List<UsersEntity> list = userDao.list();
+        for (UsersEntity user : list) {
+            if (user.getUsername().equals(username)) {
+                return user;
+            }
+        }
+        return temp;
+    }
+
+    @Transactional
+    public void update(UsersEntity user) {
+        userDao.update(user);
+    }
+
+    @Transactional
+    public void delete(UsersEntity user) {
+        userDao.delete(user);
     }
 
 }

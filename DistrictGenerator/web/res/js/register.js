@@ -8,7 +8,7 @@ $(document).ready(function () {
         } else {
             $('.ed-2').css("visibility", "hidden");
             $.ajax({
-                url: '/register',
+                url: '/user/register',
                 method: 'POST',
                 data: $('#register-form').serialize(),
                 success: function (data) {
@@ -26,14 +26,18 @@ $(document).ready(function () {
     $('#login-form').submit(function (event) {
         event.preventDefault();
         $.ajax({
-            url: '/login',
+            url: '/user/login',
             data: $('#login-form').serialize(),
             success: function (data) {
                 $('#bContainer').empty();
                 $('#bContainer').append(data);
             },
-            error: function(data) {
-                $('#ed-3').css("visibility", "visible");
+            error: function (data) {
+                $('.ed-3').css("visibility", "visible");
+            }, statusCode: {
+                500: function (response) {
+                    $('.ed-3').css("visibility", "visible");
+                }
             }
         });
     });
@@ -41,7 +45,7 @@ $(document).ready(function () {
     $('#logout-button').click(function (event) {
         event.preventDefault();
         $.ajax({
-            url: '/logout',
+            url: '/user/logout',
             success: function (data) {
                 $('#bContainer').empty();
                 $('#bContainer').append(data);
