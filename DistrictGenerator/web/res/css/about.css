@@ -1,0 +1,42 @@
+#about-container {
+    text-align: center;
+    padding: 35px;
+}
+
+.overview-group {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.instructions-group {
+    text-align: left;
+}
+
+#about-header {
+    margin-bottom: 50px;
+}
+
+#overview-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#instructions-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.measures-group {
+    text-align: left;
+
+}
+
+#measures-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+p {
+    class: lead;
+}
+
